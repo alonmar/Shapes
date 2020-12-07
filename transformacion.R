@@ -24,5 +24,5 @@ shp_regiones <- shp %>%
 st_write(shp,     "output/oaxaca.gpkg", "municipios")
 st_write(shp_regiones, "output/oaxaca.gpkg", "regiones_group", append = TRUE)
 
-shp <- st_read("https://github.com/alonmar/Shapes/blob/master/output/oaxaca.gpkg?raw=true")
 st_layers("https://github.com/alonmar/Shapes/blob/master/output/oaxaca.gpkg?raw=true")
+shp <- st_read("https://github.com/alonmar/Shapes/blob/master/output/oaxaca.gpkg?raw=true", layer = "regiones_group")
