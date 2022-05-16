@@ -28,6 +28,8 @@ st_layers("https://github.com/alonmar/Shapes/blob/master/output/oaxaca.gpkg?raw=
 shp <- st_read("https://github.com/alonmar/Shapes/blob/master/output/oaxaca.gpkg?raw=true", layer = "regiones_group")
 
 ### write Oaxaca AGEB
+## data from https://www.inegi.org.mx/temas/mg/#Descargas 
+## Marco Geoestadístico, diciembre 2021
 
 
 shp <- st_read("../20_oaxaca/conjunto_de_datos/20a.shp", 
